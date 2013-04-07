@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Weekday:</strong>
+  <%= @reminder.weekday %>
+</p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @reminder.label %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @reminder.time %>
+</p>
+
+
+<%= link_to 'Edit', edit_reminder_path(@reminder) %> |
+<%= link_to 'Back', reminders_path %>

@@ -1,0 +1,25 @@
+# == Schema Information
+#
+# Table name: reminders
+#
+#  id         :integer          not null, primary key
+#  weekday    :string(255)
+#  label      :string(255)
+#  time       :time
+#  user_id    :integer
+#  prayer_id  :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  weekday: MyString
+  label: MyString
+  time: 2013-04-07 04:51:08
+
+two:
+  weekday: MyString
+  label: MyString
+  time: 2013-04-07 04:51:08

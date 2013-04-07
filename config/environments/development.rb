@@ -24,4 +24,6 @@ GodTime::Application.configure do
 
   # Debug mode disables concatenation and preprocessing of assets.
   config.assets.debug = true
+
+  config.log_level = :debug
 end

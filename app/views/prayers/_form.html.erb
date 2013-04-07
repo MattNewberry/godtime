@@ -1,0 +1,43 @@
+<%= form_for(@prayer) do |f| %>
+  <% if @prayer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@prayer.errors.count, "error") %> prohibited this prayer from being saved:</h2>
+
+      <ul>
+      <% @prayer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :text %><br />
+    <%= f.text_area :text %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br />
+    <select name="prayer[created_by]">
+      <option>Please select</option>
+      <% User.all.each do |u| selected = @prayer.created_by == u ? "selected='selected'" : ''%>
+      <option value="<%= u.id %>" <%=selected%>><%=u.name%></option>
+      <% end %>
+    </select>
+  </div>
+  <div class="field">
+    <%= f.label :created_for %><br />
+    <select name="prayer[created_for]">
+      <option>Please select</option>
+      <% User.all.each do |u| selected = @prayer.created_for == u ? "selected='selected'" : ''%>
+      <option value="<%= u.id %>" <%=selected%>><%=u.name%></option>
+      <% end %>
+    </select>
+  </div>
+  <div class="field">
+    <%= f.label :verse %><br />
+    <%= f.text_area :verse %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

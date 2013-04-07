@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: prayers
+#
+#  id          :integer          not null, primary key
+#  text        :text
+#  created_by  :integer
+#  created_for :integer
+#  verse       :text
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  text: Please pray for...
+  created_by: 1
+  created_for: 1
+  verse: MyText
+
+two:
+  text: MyText
+  created_by: 1
+  created_for: 1
+  verse: MyText

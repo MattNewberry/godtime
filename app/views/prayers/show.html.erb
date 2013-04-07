@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @prayer.text %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= link_to @prayer.created_by.name, @prayer.created_by %>
+</p>
+
+<p>
+  <strong>Created for:</strong>
+  <%= link_to @prayer.created_for.name, @prayer.created_for %>
+</p>
+
+<p>
+  <strong>Verse:</strong>
+  <%= @prayer.verse %>
+</p>
+
+
+<%= link_to 'Edit', edit_prayer_path(@prayer) %> |
+<%= link_to 'Back', prayers_path %>

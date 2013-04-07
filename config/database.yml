@@ -17,9 +17,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: GodTime_development
+  database: godtime_development
   pool: 5
-  username: GodTime
+  username: 
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -46,15 +46,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: GodTime_test
+  database: godtime_test
   pool: 5
-  username: GodTime
+  username: 
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: GodTime_production
+  database: godtime_production
   pool: 5
-  username: GodTime
+  username: godtime
   password:
