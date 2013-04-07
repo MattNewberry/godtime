@@ -16,4 +16,8 @@ class Prayer < ActiveRecord::Base
 	belongs_to :created_by, :class_name => 'User', :foreign_key => 'created_by'
 
 	validates_presence_of :created_by, :created_for
+
+	def as_json(options = {})
+	   super options.merge(:methods => [:user], :only => [:id, :title])
+	end
 end

@@ -21,4 +21,8 @@ class User < ActiveRecord::Base
 		last = last_name.nil? ? "" : " #{last_name.to(0)}."
 		"#{first_name}#{last}"
 	end
+
+	def as_json(options = {})
+	   super options.merge(:methods => [:user], :only => [:id, :title])
+	end
 end
