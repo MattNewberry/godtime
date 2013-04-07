@@ -18,7 +18,7 @@ class PrayersControllerTest < ActionController::TestCase
 
   test "should create prayer" do
     assert_difference('Prayer.count') do
-      post :create, prayer: { created_by: @prayer.created_by, created_for: @prayer.created_for, text: @prayer.text, verse: @prayer.verse }
+      post :create, prayer: { created_by: @prayer.created_by, created_for: @prayer.created_for, text: @prayer.text, title: @prayer.title }
     end
 
     assert_redirected_to prayer_path(assigns(:prayer))
@@ -35,7 +35,7 @@ class PrayersControllerTest < ActionController::TestCase
   end
 
   test "should update prayer" do
-    patch :update, id: @prayer, prayer: { created_by: @prayer.created_by, created_for: @prayer.created_for, text: @prayer.text, verse: @prayer.verse }
+    patch :update, id: @prayer, prayer: { created_by: @prayer.created_by, created_for: @prayer.created_for, text: @prayer.text, title: @prayer.title }
     assert_redirected_to prayer_path(assigns(:prayer))
   end
 

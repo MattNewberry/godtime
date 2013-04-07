@@ -76,6 +76,6 @@ class PrayersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def prayer_params
-      params.require(:prayer).permit(:text, :created_by, :created_for, :verse)
+      params.require(:prayer).permit(:text, :created_by, :created_for, :title)
     end
 end

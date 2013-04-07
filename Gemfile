@@ -7,9 +7,8 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'pg'
 
-#api
-gem 'acts_as_api'
-gem 'kaminari'
+#serial
+gem "active_model_serializers", "~> 0.7.0"
 
 #apns
 gem 'urbanairship'

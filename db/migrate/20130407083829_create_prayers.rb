@@ -4,7 +4,7 @@ class CreatePrayers < ActiveRecord::Migration
       t.text :text
       t.integer :created_by
       t.integer :created_for
-      t.text :verse
+      t.text :title
 
       t.timestamps
     end

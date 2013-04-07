@@ -6,7 +6,7 @@
 #  text        :text
 #  created_by  :integer
 #  created_for :integer
-#  verse       :text
+#  title       :text
 #  created_at  :datetime
 #  updated_at  :datetime
 #
@@ -17,10 +17,10 @@ one:
   text: Please pray for...
   created_by: 1
   created_for: 1
-  verse: MyText
+  title: MyText
 
 two:
   text: MyText
   created_by: 1
   created_for: 1
-  verse: MyText
+  title: MyText

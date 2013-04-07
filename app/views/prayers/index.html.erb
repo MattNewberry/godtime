@@ -6,7 +6,7 @@
       <th>Text</th>
       <th>Created by</th>
       <th>Created for</th>
-      <th>Verse</th>
+      <th>title</th>
       <th></th>
       <th></th>
       <th></th>
@@ -19,7 +19,7 @@
       <td><%= prayer.text %></td>
       <td><%= prayer.created_by.name %></td>
       <td><%= prayer.created_for.name %></td>
-      <td><%= prayer.verse %></td>
+      <td><%= prayer.title %></td>
       <td><%= link_to 'Show', prayer %></td>
       <td><%= link_to 'Edit', edit_prayer_path(prayer) %></td>
       <td><%= link_to 'Destroy', prayer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
