@@ -30,7 +30,7 @@ class User < ActiveRecord::Base
 
 
 	def name
-		last = last_name.nil? ? "" : "#{last_name.to(1)}"
+		last = last_name.nil? ? "" : " #{last_name.to(0)}"
 		"#{first_name}#{last}"
 	end
 end
